@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+<script src="https://unpkg.com/shapefile@0.6"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.0/proj4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<style> 
+    #map { height: 500px;}
+</style>
+
+<title> WSD Shapefile visualizer </title>
+
+</head>
+<body>
+    <div>
+        <img src="mobile_wsdlogo.png" style="float: left;"/>
+        <h1> ShapeFile Visualizer </h1>
+    </div>
+    <!-- Container of MAP  -->
+    <div id="map" style="clear: both;"> </div>
+    <!-- Create an import button and the listener event -->
+    <button id="import" onclick="click_listener()"> click me </button>
+
+
+    <script src="mapp.js"></script>
+</body>
+</html> 
